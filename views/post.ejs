@@ -1,0 +1,16 @@
+<%- include("partials/header") -%>
+
+<h1><%= title %></h1>
+<p><%= content %></p>
+
+<form action="/posts/:postId" method="post">
+  <div class="form-group">
+     <label for="text">Your Name</label>
+     <input type="text" class="form-control" name="name" id="text">
+     <label for="textarea">Comment</label>
+     <textarea class="form-control" rows="4" cols="40" name="commentBody" id="textarea"></textarea>
+ </div>
+     <button type="submit" class="btn btn-primary" name="button">Submit</button>
+</form>
+
+<%- include("partials/footer") -%>
